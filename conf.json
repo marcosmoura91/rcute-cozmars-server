@@ -10,12 +10,12 @@
       27
     ],
     "forward": [
-      0.8,
+      1,
       1
     ],
     "backward": [
       1,
-      0.9
+      1
     ],
     "left": [
       24,
@@ -24,8 +24,8 @@
   },
   "screen": {
     "cs": 7,
-    "dc": 6,
-    "rst": 5
+    "dc": 9,
+    "rst": 25
   },
   "servo": {
     "backlight": {
@@ -36,19 +36,19 @@
     },
     "freq": 60,
     "head": {
-      "channel": 10,
-      "max_pulse": 1800,
-      "min_pulse": 1350
+      "channel": 6,
+      "max_pulse": 1650,
+      "min_pulse": 1100
     },
     "left_arm": {
-      "channel": 9,
-      "max_pulse": 1600,
-      "min_pulse": 2070
+      "channel": 5,
+      "max_pulse": 1200,
+      "min_pulse": 1800
     },
     "right_arm": {
-      "channel": 11,
-      "max_pulse": 920,
-      "min_pulse": 490
+      "channel": 7,
+      "max_pulse": 1110,
+      "min_pulse": 570
     },
     "update_rate": 20
   },
