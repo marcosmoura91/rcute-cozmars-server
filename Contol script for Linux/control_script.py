@@ -80,7 +80,7 @@ def main(stdscr):
                 elif c == ord('q'):  # q Disconnect
                     robot.disconnect()
                     exit()
-                elif c == ord('y'):  # q Disconnect
+                elif c == ord('y'):  # Record 5sec and play it back
                     FORMAT = pyaudio.paInt16
                     CHANNELS = 2
                     RATE = 44100
@@ -97,9 +97,9 @@ def main(stdscr):
                         frames.append(data)
                     robot.speaker.play(data)
 
-                elif c == ord('m'):  # q Disconnect
+                elif c == ord('m'):  # Record a audio file to the raspberry pi
                     mic_on = not mic_on
-                elif c == ord('g'):  # q Disconnect
+                elif c == ord('g'):  # activate speech recognition (NOT FINISHED)
                     if listen_on:
                         robot.when_called = cb
                     else:
