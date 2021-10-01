@@ -1,0 +1,64 @@
+{
+  "button": 4,
+  "ir": {
+    "left": 12,
+    "right": 16
+  },
+  "motor": {
+    "right": [
+      17,
+      27
+    ],
+    "forward": [
+      1,
+      1
+    ],
+    "backward": [
+      1,
+      1
+    ],
+    "left": [
+      24,
+      23
+    ]
+  },
+  "screen": {
+    "cs": 7,
+    "dc": 9,
+    "rst": 25
+  },
+  "servo": {
+    "backlight": {
+      "channel": 15
+    },
+    "speaker": {
+      "channel": 0
+    },
+    "freq": 60,
+    "head": {
+      "channel": 6,
+      "max_pulse": 1650,
+      "min_pulse": 1100
+    },
+    "left_arm": {
+      "channel": 5,
+      "max_pulse": 1200,
+      "min_pulse": 1800
+    },
+    "right_arm": {
+      "channel": 7,
+      "max_pulse": 1110,
+      "min_pulse": 570
+    },
+    "update_rate": 20
+  },
+  "sonar": {
+    "echo": 13,
+    "trigger": 26,
+    "max": 0.5,
+    "threshold": 0.1
+  },
+  "upgrade": {
+    "cmd": "sudo python3 -m pip install rcute-cozmars-server==2.* -U"
+  }
+}
